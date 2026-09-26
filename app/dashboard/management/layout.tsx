@@ -39,7 +39,7 @@ export default function ManagementLayout({ children }: { children: React.ReactNo
               <Mail size={19} />
             </div>
             <div>
-              <h2 className="font-bold">Staff & manager login emails</h2>
+              <h2 className="font-bold">Staff & Manager Login Details</h2>
               <p className="text-xs text-[#756B62]">
                 Every staff or manager created from this management section will appear here with their login Gmail/email.
               </p>
