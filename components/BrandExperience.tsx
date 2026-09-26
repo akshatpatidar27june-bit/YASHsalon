@@ -17,7 +17,7 @@ function YashLogo({ className = '' }: { className?: string }) {
 
 export function BrandLogo() {
   return (
-    <div className="h-[46px] w-[46px] overflow-hidden rounded-[10px] sm:h-[52px] sm:w-[52px]">
+    <div className="h-[42px] w-[170px] overflow-hidden sm:h-[48px] sm:w-[190px]">
       <YashLogo />
     </div>
   );
