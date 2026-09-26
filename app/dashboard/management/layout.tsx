@@ -32,15 +32,15 @@ export default function ManagementLayout({ children }: { children: React.ReactNo
   return (
     <>
       {children}
-      <section className="min-h-screen bg-[#f5f1ea] px-5 pb-10 md:px-8">
-        <div className="mx-auto max-w-7xl rounded-3xl border border-[#e5ddd2] bg-white p-6">
+      <section className="min-h-screen bg-[#F7F4EF] px-5 pb-10 md:px-8">
+        <div className="mx-auto max-w-7xl rounded-md border border-[#DED6CC] bg-white p-6">
           <div className="flex items-center gap-3">
-            <div className="grid h-11 w-11 place-items-center rounded-2xl bg-[#17130f] text-white">
+            <div className="grid h-11 w-11 place-items-center rounded-md bg-[#17130F] text-white">
               <Mail size={19} />
             </div>
             <div>
               <h2 className="font-bold">Staff & manager login emails</h2>
-              <p className="text-xs text-[#756b62]">
+              <p className="text-xs text-[#756B62]">
                 Every staff or manager created from this management section will appear here with their login Gmail/email.
               </p>
             </div>
@@ -51,19 +51,19 @@ export default function ManagementLayout({ children }: { children: React.ReactNo
               <a
                 key={id}
                 href={`mailto:${email}`}
-                className="rounded-2xl border border-[#e5ddd2] bg-[#f5f1ea] p-4 transition hover:-translate-y-0.5"
+                className="rounded-md border border-[#DED6CC] bg-[#F7F4EF] p-4 transition hover:-translate-y-0.5"
               >
                 <div className="flex items-center gap-3">
                   <Users size={17} />
                   <div className="min-w-0">
                     <p className="truncate font-semibold">{names[id] || 'Team member'}</p>
-                    <p className="mt-1 break-all text-xs text-[#756b62]">{email}</p>
+                    <p className="mt-1 break-all text-xs text-[#756B62]">{email}</p>
                   </div>
                 </div>
               </a>
             ))}
             {!Object.keys(emails).length && (
-              <p className="text-sm text-[#756b62]">No staff or manager login emails found yet.</p>
+              <p className="text-sm text-[#756B62]">No staff or manager login emails found yet.</p>
             )}
           </div>
         </div>
