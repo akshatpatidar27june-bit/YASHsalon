@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import CornerBrand from '../../components/CornerBrand';
 import { BarChart3, Building2, IndianRupee, LayoutDashboard, LogOut, Receipt, Settings, Users, Scissors, Menu, X, UserRound, TrendingUp, TrendingDown, CalendarDays, Clock3, AlertTriangle, UserCheck, UserX, Target, Sparkles, RefreshCw } from 'lucide-react';
 import { supabase, supabasePublic } from '../../lib/supabase';
 import { useRouter } from 'next/navigation';
